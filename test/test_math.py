@@ -16,3 +16,8 @@ def test_multiply():
 def test_divide():
     result = math.divide(10, 2)
     assert result == 5
+
+def test_divide_by_zero():
+    with pytest.raises(ZeroDivisionError):
+        math.divide(10, 0)
+    
