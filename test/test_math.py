@@ -2,13 +2,17 @@ import pytest
 import src.math as math
 
 def test_add():
-    assert math.add(5, 5) == 10
+    result = math.add(5, 5)
+    assert result == 10
 
 def test_subtract():
-    assert math.subtract(10, 5) == 5
+    result = math.subtract(10, 5)
+    assert result == 5
 
 def test_multiply():
-    assert math.multiply(3, 3) == 9
+    result = math.multiply(5, 5)
+    assert result == 25
 
 def test_divide():
-    assert math.divide(10, 2) == 5
+    result = math.divide(10, 2)
+    assert result == 5
